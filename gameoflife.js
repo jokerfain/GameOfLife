@@ -4,7 +4,6 @@ var deley = process.argv[4] || 500
 var board = new Array()
 
 
-//console.log(heigth, width)
 function genBoard() {
     for (let i = 0; i < heigth; i++) {
         board[i] = new Array()
@@ -40,7 +39,7 @@ function nextGen(){
         for (let j = 0; j < width; j ++){
             if (alive(i, j)){
                 next_board[i][j] = 1;
-                //console.log(next_board)
+                
             }
             else { 
                 next_board[i][j] = 0; 
@@ -51,7 +50,7 @@ function nextGen(){
 }
 function countNeighboards(i, j){
     var count = 0;
-    //console.log(i, j);
+    
     if (board[i + 1]){
         if ( board[i + 1][j + 1] ) { count++; }
         if ( board[i + 1][j] ) { count++; }
