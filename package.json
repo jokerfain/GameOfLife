@@ -1,0 +1,11 @@
+{
+  "name": "123",
+  "version": "1.0.0",
+  "description": "",
+  "main": "game.js",
+  "scripts": {
+    "test": "node game.js"
+  },
+  "author": "valentin",
+  "license": "ISC"
+}
